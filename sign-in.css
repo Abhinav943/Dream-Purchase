@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Barlow', sans-serif;
+}
+a{
+  text-decoration: none;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  background-image: radial-gradient(
+    circle at 3.2% 49.6%,
+    rgba(80, 12, 139, 0.87) 0%,
+    rgba(161, 10, 144, 0.72) 83.6%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  height: 60%;
+  width: 40%;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 1rem;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.input-box {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.email-box, .password-box {
+  width: 80%;
+  height: 3rem;
+  padding: 1rem;
+  outline: none;
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.email-box:focus, .password-box:focus {
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 4px 8px rgba(29, 28, 28, 0.664);
+}
+
+#sumbit-box {
+  width: 50%;
+  height: 3rem;
+  padding: 1rem;
+  outline: none;
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: rgb(0, 255, 217);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#sumbit-button-para {
+  text-align: center;
+  color: rgb(230, 33, 33);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+#sumbit-box:hover {
+  transform: scale(1.1);
+  background-color: rgb(0, 230, 200);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
